@@ -1,5 +1,9 @@
-h1 {
-    margin: 5%;
-    text-align: center;
-    font-size: xx-large;
+#menubar {
+    justify-content: space-evenly;
+    display: flex;
+}
+
+#menu_img {
+    width: 50px;
+    height: 50px;
 }
