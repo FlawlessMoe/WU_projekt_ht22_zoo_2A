@@ -1,11 +1,27 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
 #menubar {
     display: flex;
     width: auto;
     height: 100px;
     justify-content: center;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #menu_img {
+    width: 55px;
+    height: 50px;
+}
+
+#phone_img {
+    width: 50px;
+    height: 55px;
+}
+
+#email_img {
     width: 55px;
     height: 50px;
 }
