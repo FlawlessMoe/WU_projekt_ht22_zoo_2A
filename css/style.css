@@ -2,12 +2,57 @@
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    outline: none;
-    border: none;
-    text-decoration: none;
-    box-sizing: border-box;
 }
 
 body {
     background: white;
+}
+
+#menubar {
+    display: flex;
+}
+
+h1 {
+    font-size: 40px;
+    margin-top: 1.5%;
+    text-align: center;
+}
+
+#menubar {
+    margin: 3%;
+    justify-content: space-evenly;
+    display: flex;
+    grid-template-columns: repeat(8, 50px);
+    grid-template-areas: 
+    "a1 a2 a3 a4 a5 a6 a7";
+    column-gap: 15px;
+}
+
+.button:hover {
+    color: #0087ca;
+}
+
+.button {
+    font-weight: 550;
+    display: inline-block;
+    position: relative;
+}
+  
+.button:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: 
+  #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.button:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
