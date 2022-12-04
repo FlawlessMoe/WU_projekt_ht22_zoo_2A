@@ -32,12 +32,37 @@
     </header>
 
     <main>
+        <div id="maindiv">
 
-        <h2>
-            
-        </h2>
-        <div id="divmain">
-            <span>1</span>
+            <h2 id="h2hej">Kontakta Oss</h2>
+
+            <p id="hejp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium blanditiis quod atque officiis dicta? Vel repellendus delectus sequi asperiores. Inventore?<br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero culpa iste officia maiores rem laborum nulla fugit sit quae consequatur.</p>
+
+            <div class="container">
+                
+                <form onsubmit="sendEmail()">
+                      <input type="text" id="name" placeholder="Ditt Namn" required>
+                      <input type="email" id="email" placeholder="Din Mail" required>
+                      <input type="text" id="phone" placeholder="Telefon no." required>
+                      <textarea id="message" rows="4" placeholder="Hur kan vi hjälpa dig?" required></textarea>
+                      <button type="submit">Skicka</button>
+                </form>
+                
+                <script src="https://smtpjs.com/v3/smtp.js"></script>
+                <script>
+                    function sendEmail(){
+                        Email.send({
+                            secureToken: "c6e534fa-0429-48a5-82cb-e2907ae75a61",
+                            To : 'hamzamuhamed721@gmail.com',
+                            From : document.getElementById("email").value,
+                            Subject : "Nytt meddelande från Zoo & Lek",
+                            Body : "Name: " + document.getElementById("name").value + "<br> Email: " + getElementById("email").value + "<br> Phone: " + getElementById("phone").value + "<br> Message: " + getElementById("name").value
+                        }).then(
+                            message => alert("Tack för ditt meddelande!")
+                        );
+                    }
+                </script>
+            </div>
         </div>
     </main>
 
