@@ -4,12 +4,10 @@
     padding: 0;
 }
 
-span {
-    margin: 1%;
-}
-
 header {
-    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: rgb(86, 151, 172);
 }
 
@@ -70,6 +68,10 @@ h1 {
     transform-origin: bottom left;
 }
 
+#divmain {
+    height: 1000px;
+}
+
 footer {
     text-align: center;
     padding: 50px;
@@ -78,11 +80,7 @@ footer {
 }
 
 #pfooter {
-    margin-top: 20px;
-}
-
-#divfooter {
-
+    margin-top: 10px;
 }
 
 #phoneimg {
@@ -93,4 +91,13 @@ footer {
 #emailimg {
     height: 50px;
     width: 50px;
+}
+
+#divfooter {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    column-gap: 20px;
 }
