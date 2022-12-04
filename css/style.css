@@ -8,6 +8,10 @@ body {
     background: white;
 }
 
+a {
+    color: black;
+}
+
 #menubar {
     display: flex;
 }
