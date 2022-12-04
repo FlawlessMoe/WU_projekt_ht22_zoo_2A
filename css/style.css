@@ -101,3 +101,10 @@ footer {
     row-gap: 10px;
     column-gap: 20px;
 }
+
+#elma {
+    font-weight: bold;
+    margin-top: 65px;
+    display: flex;
+    justify-content: space-evenly;
+}
