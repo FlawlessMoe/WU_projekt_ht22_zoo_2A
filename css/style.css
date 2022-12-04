@@ -10,7 +10,7 @@ span {
 
 header {
     align-content: center;
-    background: rgb(86, 151, 172);;
+    background: rgb(86, 151, 172);
 }
 
 body {
@@ -18,7 +18,7 @@ body {
 }
 
 a {
-    color: black;
+    color: white;
 }
 
 #menubar {
@@ -29,6 +29,7 @@ h1 {
     margin: 1%;
     font-size: 40px;
     text-align: center;
+    color: white;
 }
 
 #menubar {
