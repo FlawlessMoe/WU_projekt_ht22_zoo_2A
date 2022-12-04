@@ -4,6 +4,15 @@
     padding: 0;
 }
 
+span {
+    margin: 1%;
+}
+
+header {
+    align-content: center;
+    background: lightgrey;
+}
+
 body {
     background: white;
 }
@@ -17,8 +26,8 @@ a {
 }
 
 h1 {
+    margin: 1%;
     font-size: 40px;
-    margin-top: 1.5%;
     text-align: center;
 }
 
