@@ -10,7 +10,7 @@ span {
 
 header {
     align-content: center;
-    background: lightgrey;
+    background: rgb(86, 151, 172);;
 }
 
 body {
@@ -42,7 +42,7 @@ h1 {
 }
 
 .button:hover {
-    color: #0087ca;
+    color: white;
 }
 
 .button {
@@ -59,8 +59,7 @@ h1 {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: 
-  #0087ca;
+    background-color: white;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -68,4 +67,29 @@ h1 {
 .button:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+footer {
+    text-align: center;
+    padding: 50px;
+    background-color: rgb(86, 151, 172);
+    color: white;
+}
+
+#pfooter {
+    margin-top: 20px;
+}
+
+#divfooter {
+
+}
+
+#phoneimg {
+    height: 40px;
+    width: 40px;
+}
+
+#emailimg {
+    height: 50px;
+    width: 50px;
 }

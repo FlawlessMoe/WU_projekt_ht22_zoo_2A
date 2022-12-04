@@ -23,6 +23,17 @@ h2 {
     margin-top: 2%;
 }
 
+h3 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+p {
+    font-weight:normal;
+    margin-top: 20px;
+    text-align: center;
+}
+
 .menucarddiv {
     border-radius: 10px;
 }
@@ -112,4 +123,76 @@ h2 {
     background: lightgray;
     height: 350px;
     width: 250px;
+}
+
+#pizzaimg {
+    margin-left: 12.5px;
+    border-radius: 10px;
+    margin-top: 12.5px;
+    height: 150px;
+    width: 225px;
+}
+
+#hbfriesimg {
+    margin-left: 12.5px;
+    border-radius: 10px;
+    margin-top: 12.5px;
+    height: 150px;
+    width: 225px;
+}
+
+#noodlesimg {
+    margin-left: 12.5px;
+    border-radius: 10px;
+    margin-top: 12.5px;
+    height: 150px;
+    width: 225px;
+}
+
+#donutsimg {
+    margin-left: 12.5px;
+    border-radius: 10px;
+    margin-top: 12.5px;
+    height: 150px;
+    width: 225px;
+}
+
+#yoghurtimg {
+    margin-left: 12.5px;
+    border-radius: 10px;
+    margin-top: 12.5px;
+    height: 150px;
+    width: 225px;
+}
+
+#pancakesimg {
+    margin-left: 12.5px;
+    border-radius: 10px;
+    margin-top: 12.5px;
+    height: 150px;
+    width: 225px;
+}
+
+#drinksimg {
+    margin-left: 12.5px;
+    border-radius: 10px;
+    margin-top: 12.5px;
+    height: 150px;
+    width: 225px;
+}
+
+#fruitsimg {
+    margin-left: 12.5px;
+    border-radius: 10px;
+    margin-top: 12.5px;
+    height: 150px;
+    width: 225px;
+}
+
+#shakeimg {
+    margin-left: 12.5px;
+    border-radius: 10px;
+    margin-top: 12.5px;
+    height: 150px;
+    width: 225px;
 }
