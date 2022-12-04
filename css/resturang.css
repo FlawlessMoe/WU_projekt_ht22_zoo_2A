@@ -5,6 +5,111 @@
 }
 
 #ptitel {
+    margin-top: 2%;
     font-size: 40px;
     text-align: center;
+}
+
+#pinfo {
+    margin-top: 1%;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+#h2 {
+    margin-top: 2%;
+}
+
+.menucarddiv {
+    border-radius: 10px;
+}
+
+#menu1-3 {
+    display: grid;
+    justify-content: center;
+    margin: 60px;
+    grid-template-columns: repeat(3);
+    grid-template-areas: 
+        "hea hea hea";
+    row-gap: 20px;
+    column-gap: 50px;
+}
+
+#item1 {
+    background: lightgray;
+    height: 350px;
+    width: 250px;
+}
+
+#item2 {
+    background: lightgray;
+    height: 350px;
+    width: 250px;
+}
+
+#item3 {
+    background: lightgray;
+    height: 350px;
+    width: 250px;
+}
+
+#menu4-6 {
+    display: grid;
+    justify-content: center;
+    margin: 60px;
+    grid-template-columns: repeat(3);
+    grid-template-areas: 
+        "hea hea hea";
+    row-gap: 20px;
+    column-gap: 50px;
+}
+
+#item4 {
+    background: lightgray;
+    height: 350px;
+    width: 250px;
+}
+
+#item5 {
+    background: lightgray;
+    height: 350px;
+    width: 250px;
+}
+
+#item6 {
+    background: lightgray;
+    height: 350px;
+    width: 250px;
+}
+
+#menu7-9 {
+    display: grid;
+    justify-content: center;
+    margin: 60px;
+    grid-template-columns: repeat(3);
+    grid-template-areas: 
+        "hea hea hea";
+    row-gap: 20px;
+    column-gap: 50px;
+}
+
+#item7 {
+    background: lightgray;
+    height: 350px;
+    width: 250px;
+}
+
+#item8 {
+    background: lightgray;
+    height: 350px;
+    width: 250px;
+}
+
+#item9 {
+    background: lightgray;
+    height: 350px;
+    width: 250px;
 }
