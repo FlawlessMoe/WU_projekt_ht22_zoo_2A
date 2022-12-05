@@ -8,7 +8,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(86, 151, 172);
+    background: #a98467;
 }
 
 body {
@@ -75,7 +75,7 @@ h1 {
 footer {
     text-align: center;
     padding: 50px;
-    background-color: rgb(86, 151, 172);
+    background-color: #a98467;
     color: white;
 }
 
@@ -107,4 +107,37 @@ footer {
     margin-top: 65px;
     display: flex;
     justify-content: space-evenly;
+}
+
+#homeimg {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#homeimg {
+    width: 100%;
+    height: 100%;
+}
+
+.picturehomeimg {
+    position: relative;
+}
+
+.titelhome {
+    position: absolute;
+    text-align: center;
+    font-size: 75px;
+}
+
+#buttonmain {
+    height: 25px;
+    width: 50px;
+    border-radius: 10px;
+    border: white;
 }
