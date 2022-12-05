@@ -40,28 +40,36 @@
 
             <div class="container">
                 
-                <form onsubmit="sendEmail()">
-                      <input type="text" id="name" placeholder="Ditt Namn" required>
-                      <input type="email" id="email" placeholder="Din Mail" required>
-                      <input type="text" id="phone" placeholder="Telefon no." required>
-                      <textarea id="message" rows="4" placeholder="Hur kan vi hjälpa dig?" required></textarea>
-                      <button type="submit">Skicka</button>
+                <form>
+                    <span class="message"></span>
+                    <input type="text" name="name" placeholder="Namn..">
+                    <input type="email" name="email" placeholder="Mail..">
+                    <textarea name="message" cols="30" rows="10" placeholder="Meddelande.."></textarea>
+                    <input type="submit" class="submit">
                 </form>
                 
-                <script src="https://smtpjs.com/v3/smtp.js"></script>
                 <script>
-                    function sendEmail(){
-                        Email.send({
-                            secureToken: "c6e534fa-0429-48a5-82cb-e2907ae75a61",
-                            To : 'hamzamuhamed721@gmail.com',
-                            From : document.getElementById("email").value,
-                            Subject : "Nytt meddelande från Zoo & Lek",
-                            Body : "Name: " + document.getElementById("name").value + "<br> Email: " + getElementById("email").value + "<br> Phone: " + getElementById("phone").value + "<br> Message: " + getElementById("name").value
-                        }).then(
-                            message => alert("Tack för ditt meddelande!")
-                        );
-                    }
+                    let url = "https://script.google.com/macros/s/AKfycbwuWDDFsEfKml-ecJln6MUHGAiB_DsUnClhQKBITJtWhs52JfNTBdCyeb4gHoJ2Rdfr/exec";
+                    let form = document.querySelector("form");
+                    let submit = document.querySelector("submit")
+                    let message = document.querySelector("message");
+                    form.addEventListener('submit',(e)=>{
+                        e.preventDefault();
+                        submit.value = "submitting.."
+                        fetch(url,{method:"POST", body:new FormData(form)})
+                        .then(res=>res.text())
+                        .then(data=>{
+                            message.innerHTML = data;
+                            submit.value = "submit"
+                        })
+                        .catch(err=>{
+                            message.innerHTML= err;
+                            submit.value = "submit"
+
+                        })
+                    })
                 </script>
+
             </div>
         </div>
     </main>
