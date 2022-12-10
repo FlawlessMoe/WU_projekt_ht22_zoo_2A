@@ -5,10 +5,12 @@
 }
 
 header {
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
     background: #a98467;
+    width: 100%;
 }
 
 body {
@@ -17,10 +19,6 @@ body {
 
 a {
     color: white;
-}
-
-#menubar {
-    display: flex;
 }
 
 h1 {
@@ -32,8 +30,8 @@ h1 {
 
 #menubar {
     margin: 3%;
-    justify-content: space-evenly;
     display: flex;
+    justify-content: space-evenly
     grid-template-columns: repeat(8, 50px);
     grid-template-areas: 
     "a1 a2 a3 a4 a5 a6 a7";
@@ -66,10 +64,6 @@ h1 {
 .button:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
-}
-
-#divmain {
-    height: 1000px;
 }
 
 footer {
@@ -198,11 +192,33 @@ main {
 }
 
 #content1 {
-    display: grid;
+    display: flex;
     width: auto;
-    height: 1000px;
+    height: 2000px;
     justify-content: center;
     align-items: center;
+}
+
+#page1 {
+
+}
+
+#contentelma {
+
+}
+
+#h2elma {
+
+}
+
+#textelma {
+
+}
+
+#deerelma {
+    border-radius: 50px 125px 125px 50px;
+    height: 750px;
+    width: 500px;
 }
 
 h2 {
@@ -232,7 +248,14 @@ p {
     font-weight:normal;
     margin-top: 20px;
     text-align: center;
+}
+
+.elmap {
     color: white;
+}
+
+#resturangelma {
+    margin-top: 13%;
 }
 
 .menucarddiv {
@@ -398,9 +421,15 @@ p {
     width: 225px;
 }
 
+#maindiv {
+    margin-top: 13%;
+}
+
 #divmain {
+    margin-top: 13%;
     display: grid;
     justify-content: center;
+    height: 1000px;
 }
 
 #h2hej {
@@ -413,6 +442,7 @@ p {
 #hejp {
     text-align: center;
     margin-bottom: 20px;
+    color: black;
 }
 
 form {
