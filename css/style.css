@@ -115,6 +115,12 @@ footer {
 }
 
 main {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainhomeindex {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,11 +139,316 @@ main {
     position: absolute;
     text-align: center;
     font-size: 75px;
+    text-shadow: 0 0 10px rgb(255, 166, 0);
 }
 
-#buttonmain {
-    height: 25px;
-    width: 50px;
+.btn{
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 300px;
+    font-weight: 0;
+    font-size: 14px;
+    color: white;
+    background-color: #e9c46a;
+    padding: 10px 30px;
+    border: solid #e9c46a 2px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 50px;
+    transition : 1000ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#jonte {
+    text-decoration: none;
+}
+    
+.btn:hover{
+    transition : 1000ms;
+    padding: 10px 50px;
+    transform : translateY(-0px);
+    background-color: #dfcda0;
+    color: black;
+    border: solid 2px #e9c46a;
+}
+
+#ptitel {
+    margin-top: 4%;
+    font-size: 40px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+#pinfo {
+    font-weight: 500;
+    margin-top: 2%;
+    text-align: center;
+    color: black;
+}
+
+h2 {
+    text-align: center;
+}
+
+#h2 {
+    margin-top: 5%;
+    color: black;
+}
+
+#h21 {
+    margin-top: 2.5%;
+}
+
+#h22 {
+    margin-top: 2.5%;
+}
+
+h3 {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+}
+
+p {
+    font-weight:normal;
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+}
+
+.menucarddiv {
     border-radius: 10px;
-    border: white;
+}
+
+#menu1-3 {
+    display: grid;
+    justify-content: center;
+    margin: 60px;
+    grid-template-columns: repeat(3);
+    grid-template-areas: 
+        "hea hea hea";
+    row-gap: 20px;
+    column-gap: 50px;
+}
+
+#item1 {
+    background: #a98467;
+    height: 350px;
+    width: 250px;
+}
+
+#item2 {
+    background: #a98467;
+    height: 350px;
+    width: 250px;
+}
+
+#item3 {
+    background: #a98467;
+    height: 350px;
+    width: 250px;
+}
+
+#menu4-6 {
+    display: grid;
+    justify-content: center;
+    margin: 60px;
+    grid-template-columns: repeat(3);
+    grid-template-areas: 
+        "hea hea hea";
+    row-gap: 20px;
+    column-gap: 50px;
+}
+
+#item4 {
+    background: #a98467;
+    height: 350px;
+    width: 250px;
+}
+
+#item5 {
+    background: #a98467;
+    height: 350px;
+    width: 250px;
+}
+
+#item6 {
+    background: #a98467;
+    height: 350px;
+    width: 250px;
+}
+
+#menu7-9 {
+    display: grid;
+    justify-content: center;
+    margin: 60px;
+    grid-template-columns: repeat(3);
+    grid-template-areas: 
+        "hea hea hea";
+    row-gap: 20px;
+    column-gap: 50px;
+}
+
+#item7 {
+    background: #a98467;
+    height: 350px;
+    width: 250px;
+}
+
+#item8 {
+    background: #a98467;
+    height: 350px;
+    width: 250px;
+}
+
+#item9 {
+    background: #a98467;
+    height: 350px;
+    width: 250px;
+}
+
+#pizzaimg {
+    margin-left: 12.5px;
+    border-radius: 10px;
+    margin-top: 12.5px;
+    height: 150px;
+    width: 225px;
+}
+
+#hbfriesimg {
+    margin-left: 12.5px;
+    border-radius: 10px;
+    margin-top: 12.5px;
+    height: 150px;
+    width: 225px;
+}
+
+#noodlesimg {
+    margin-left: 12.5px;
+    border-radius: 10px;
+    margin-top: 12.5px;
+    height: 150px;
+    width: 225px;
+}
+
+#donutsimg {
+    margin-left: 12.5px;
+    border-radius: 10px;
+    margin-top: 12.5px;
+    height: 150px;
+    width: 225px;
+}
+
+#yoghurtimg {
+    margin-left: 12.5px;
+    border-radius: 10px;
+    margin-top: 12.5px;
+    height: 150px;
+    width: 225px;
+}
+
+#pancakesimg {
+    margin-left: 12.5px;
+    border-radius: 10px;
+    margin-top: 12.5px;
+    height: 150px;
+    width: 225px;
+}
+
+#drinksimg {
+    margin-left: 12.5px;
+    border-radius: 10px;
+    margin-top: 12.5px;
+    height: 150px;
+    width: 225px;
+}
+
+#fruitsimg {
+    margin-left: 12.5px;
+    border-radius: 10px;
+    margin-top: 12.5px;
+    height: 150px;
+    width: 225px;
+}
+
+#shakeimg {
+    margin-left: 12.5px;
+    border-radius: 10px;
+    margin-top: 12.5px;
+    height: 150px;
+    width: 225px;
+}
+
+#divmain {
+    display: grid;
+    justify-content: center;
+}
+
+#h2hej {
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#hejp {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+form input, form textarea {
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 16px;
+}
+
+form button {
+    padding: 15px;
+    background: #a98467;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border: 30px;   
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#elmaa {
+    font-weight: bold;
+    margin-top: 65px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#elmaaa {
+    font-weight: bold;
+    margin-top: 65px;
+    display: flex;
+    justify-content: space-evenly;
 }
