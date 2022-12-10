@@ -120,8 +120,14 @@ main {
     align-items: center;
 }
 
-#mainhomeindex {
+#titelimg{
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainhomeindex {
+    display: grid;
     justify-content: center;
     align-items: center;
 }
@@ -189,6 +195,14 @@ main {
     margin-top: 2%;
     text-align: center;
     color: black;
+}
+
+#content1 {
+    display: grid;
+    width: auto;
+    height: 1000px;
+    justify-content: center;
+    align-items: center;
 }
 
 h2 {
