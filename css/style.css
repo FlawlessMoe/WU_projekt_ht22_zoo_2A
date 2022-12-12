@@ -11,6 +11,7 @@ header {
     align-items: center;
     background: white;
     width: 100%;
+    box-shadow: 0.01px 0.5px 25px rgb(165, 165, 165);
 }
 
 body {
@@ -18,18 +19,18 @@ body {
 }
 
 a {
-    color: white;
+    color: black;
 }
 
 h1 {
     margin: 1%;
     font-size: 40px;
     text-align: center;
-    color: white;
+    color: black;
 }
 
 #menubar {
-    margin: 3%;
+    margin: 2.75%;
     display: flex;
     justify-content: space-evenly
     grid-template-columns: repeat(8, 50px);
@@ -39,7 +40,7 @@ h1 {
 }
 
 .button:hover {
-    color: white;
+    color: black;
 }
 
 .button {
@@ -69,7 +70,7 @@ h1 {
 footer {
     text-align: center;
     padding: 50px;
-    background-color: white;
+    background-color: #043217;
     color: white;
 }
 
@@ -114,11 +115,6 @@ main {
     align-items: center;
 }
 
-#titelimg{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 #mainhomeindex {
     display: grid;
@@ -126,54 +122,8 @@ main {
     align-items: center;
 }
 
-#homeimg {
-    width: 100%;
-    height: 100%;
-}
-
-.picturehomeimg {
-    position: relative;
-}
-
-.titelhome {
-    position: absolute;
-    text-align: center;
-    font-size: 75px;
-    text-shadow: 0 0 10px rgb(255, 166, 0);
-}
-
-.btn{
-    position: absolute;
-    font-family: 'Poppins', sans-serif;
-    margin-top: 300px;
-    font-weight: 0;
-    font-size: 14px;
-    color: white;
-    background-color: #e9c46a;
-    padding: 10px 30px;
-    border: solid #e9c46a 2px;
-    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
-    border-radius: 50px;
-    transition : 1000ms;
-    transform: translateY(0);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    cursor: pointer;
-    text-decoration: none;
-}
-
 #jonte {
     text-decoration: none;
-}
-    
-.btn:hover{
-    transition : 1000ms;
-    padding: 10px 50px;
-    transform : translateY(-0px);
-    background-color: #dfcda0;
-    color: black;
-    border: solid 2px #e9c46a;
 }
 
 #ptitel {
@@ -274,19 +224,19 @@ p {
 }
 
 #item1 {
-    background: #a98467;
+    background: #49a53b;
     height: 350px;
     width: 250px;
 }
 
 #item2 {
-    background: #a98467;
+    background: #49a53b;
     height: 350px;
     width: 250px;
 }
 
 #item3 {
-    background: #a98467;
+    background: #49a53b;
     height: 350px;
     width: 250px;
 }
