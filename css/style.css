@@ -9,7 +9,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #a98467;
+    background: white;
     width: 100%;
 }
 
@@ -69,7 +69,7 @@ h1 {
 footer {
     text-align: center;
     padding: 50px;
-    background-color: #a98467;
+    background-color: white;
     color: white;
 }
 
@@ -303,19 +303,19 @@ p {
 }
 
 #item4 {
-    background: #a98467;
+    background: #49a53b;
     height: 350px;
     width: 250px;
 }
 
 #item5 {
-    background: #a98467;
+    background: #49a53b;
     height: 350px;
     width: 250px;
 }
 
 #item6 {
-    background: #a98467;
+    background: #49a53b;
     height: 350px;
     width: 250px;
 }
@@ -332,19 +332,19 @@ p {
 }
 
 #item7 {
-    background: #a98467;
+    background: #49a53b;
     height: 350px;
     width: 250px;
 }
 
 #item8 {
-    background: #a98467;
+    background: #49a53b;
     height: 350px;
     width: 250px;
 }
 
 #item9 {
-    background: #a98467;
+    background: #49a53b;
     height: 350px;
     width: 250px;
 }
@@ -466,7 +466,7 @@ form input, form textarea {
 
 form button {
     padding: 15px;
-    background: #a98467;
+    background: #49a53b;
     color: #fff;
     font-size: 18px;
     border: 0;
