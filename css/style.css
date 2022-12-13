@@ -375,7 +375,7 @@ p {
 }
 
 #maindiv {
-    margin-top: 13%;
+    margin-top: 1.5%;
 }
 
 #divmain {
@@ -455,6 +455,10 @@ form button {
 }
 
 #tmimg {
+    width: 100%;
+}
+
+#cnusimg {
     width: 100%;
 }
 
