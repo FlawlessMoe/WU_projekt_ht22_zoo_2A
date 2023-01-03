@@ -37,40 +37,18 @@
 
             <h2 id="h2hej">Kontakta Oss</h2>
 
-            <p id="hejp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium blanditiis quod atque officiis dicta? Vel repellendus delectus sequi asperiores. Inventore?<br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero culpa iste officia maiores rem laborum nulla fugit sit quae consequatur.</p>
+            <p id="hejp">Behöver du hjälp eller har du frågor om vårt utbud av leksaker och djurprodukter? Tveka inte att kontakta oss!<br>Du kan nå oss på telefonnummer 076-229 41 04 eller via e-post på info@lekochzoo.com. Vi hjälper dig gärna.</p>
 
-            <div class="container">
-                
-                <form>
-                    <span class="message"></span>
-                    <input type="text" name="name" placeholder="Namn..">
-                    <input type="email" name="email" placeholder="Mail..">
-                    <textarea name="message" cols="30" rows="10" placeholder="Meddelande.."></textarea>
-                    <input type="submit" class="submit">
-                </form>
-                
-                <script>
-                    let url = "https://script.google.com/macros/s/AKfycbwuWDDFsEfKml-ecJln6MUHGAiB_DsUnClhQKBITJtWhs52JfNTBdCyeb4gHoJ2Rdfr/exec";
-                    let form = document.querySelector("form");
-                    let submit = document.querySelector("submit")
-                    let message = document.querySelector("message");
-                    form.addEventListener('submit',(e)=>{
-                        e.preventDefault();
-                        submit.value = "submitting.."
-                        fetch(url,{method:"POST", body:new FormData(form)})
-                        .then(res=>res.text())
-                        .then(data=>{
-                            message.innerHTML = data;
-                            submit.value = "submit"
-                        })
-                        .catch(err=>{
-                            message.innerHTML= err;
-                            submit.value = "submit"
-
-                        })
-                    })
-                </script>
-
+            <div id="container">
+                <form action="mailto:muhamed.hamza@elev.ga.ntig.se" method="post" enctype="text/plain">
+                    <label for="namn">Namn:</label><br>
+                    <input type="text" id="namn" name="namn"><br>
+                    <label for="epost">E-postadress:</label><br>
+                    <input type="text" id="epost" name="epost"><br><br>
+                    <label for="meddelande">Meddelande:</label><br>
+                    <textarea id="meddelande" name="meddelande" rows="5" cols="30"></textarea><br><br>
+                    <input type="submit" value="Skicka">
+                  </form> 
             </div>
         </div>
     </main>
@@ -80,7 +58,7 @@
         <p id="pfooter">Ett zoo för alla. Ta med hela familjen och njut en dag av underbara djur och<br>go stämning bara hos oss på Lek & Zoo!</p>
 
         <div id="elmaaa">
-            <p><b>© 2022  All rights reserved.</b></p>
+            <p><b>© 2023  All rights reserved.</b></p>
             <p><b>Made with the power of Momo</b></p>
         </div>
     </footer>
