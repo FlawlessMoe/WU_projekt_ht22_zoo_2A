@@ -34,6 +34,21 @@ h1 {
     width: 100%;
 }
 
+#shopping-bag {
+    position: absolute;
+    right: 30px;
+    top: 1;
+}
+
+#shoppingbag:hover {
+    cursor: pointer;
+}
+
+#shoppingbag {
+    height: 40p x;
+    width: 40px;
+}
+
 #menubar {
     margin: 2.75%;
     display: flex;
@@ -648,6 +663,7 @@ form {
 .bh2 {
     margin: 20px 0 10px;
     font-size: 18px;
+    font-weight: 800;
     color: #333;
 }
   
@@ -658,13 +674,15 @@ form {
   
 .bdiv {
     display: flex;
+    justify-content: center;
     align-items: center;
-    margin: 10px;
+    margin: 15px;
 }
   
 .bbutton {
     border: none;
-    background: #eee;
+    background: #5fa754;
+    color: #ffffff;
     padding: 8px 16px;
     font-size: 16px;
     cursor: pointer;
@@ -679,6 +697,39 @@ form {
     font-size: 16px;
 }
 
+#buy-button1 {
+    margin-left: 110px;
+    margin-top: 50px;
+    border: none;
+    background: #4e7049;
+    width: 75px;
+    color: #ffffff;
+    padding: 8px 16px;
+    font-size: 16px;
+}
+
+#buy-button2 {
+    margin-left: 110px;
+    margin-top: 50px;
+    border: none;
+    background: #4e7049;
+    width: 75px;
+    color: #ffffff;
+    padding: 8px 16px;
+    font-size: 16px;
+}
+
+#buy-button3 {
+    margin-left: 110px;
+    margin-top: 50px;
+    border: none;
+    background: #4e7049;
+    width: 75px;
+    color: #ffffff;
+    padding: 8px 16px;
+    font-size: 16px;
+}
+
 #bokaoss {
     display: grid;
     justify-content: center;
@@ -687,6 +738,27 @@ form {
 
 #test222 {
     margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 125px;
+}
+
+#division1 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+
+#division2 {
+    display: grid;
+    justify-content: center;
+    margin-right: 50px;
+    align-items: center;
+}
+
+#division3 {
     display: grid;
     justify-content: center;
     align-items: center;

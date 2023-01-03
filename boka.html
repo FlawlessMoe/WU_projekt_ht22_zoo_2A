@@ -24,6 +24,10 @@
             <div class="button" id="r1"></div>
             <a href="http://127.0.0.1:5500/kontakt.html" target="_self"><div class="button" id="r1">KONTAKTA OSS</div></a>
             <div class="button" id="r1"></div>
+
+            <div id="shopping-bag">
+                <img src="img/misc/shopping-bag.png" alt="Shopping bag icon" id="shoppingbag">
+              </div>
         </div>
 
     </header>
@@ -34,35 +38,44 @@
             <img src="img/backgrounds/contactus.jpg" alt="kontakta oss gärna" id="cnusimg">
         </div>
 
+        <h1 class="bh1">Välkommen att boka biljetter till Zoo</h1>
+        <p class="bp">På den här sidan kan du boka biljetter till vårt fantastiska djurpark. Välj mellan olika biljetttyper nedan och använd plus- och minusknapparna för att<br>ändra antalet biljetter. Barn upp till 3 år får gratis inträde endast med en vårdnadshavare.</p>
+
         <div id="test222">
-            <h1 class="bh1">Välkommen att boka biljetter till Zoo</h1>
-            <p class="bp">På den här sidan kan du boka biljetter till vårt fantastiska djurpark. Välj mellan olika biljetttyper nedan och använd plus- och minusknapparna för att ändra antalet biljetter.</p>
-
-            <h2 class="bh2">Barnbiljett (3-12 år)</h2>
-            <img src="img/misc/barnbiljett.jpg" width="200" height="200" alt="Bild på barnbiljett" class="bimg">
-            <div class="bdiv">
-                <button id="minus-barn" class="bbutton">-</button>
-                <span id="antal-barn" class="bspan">0</span>
-                <button id="plus-barn" class="bbutton">+</button>
+            <div id="division1">
+                <h2 class="bh2">Barnbiljett (3-12 år)</h2>
+                <img src="img/misc/barnbiljett.jpg" width="300" height="300" alt="Bild på barnbiljett" class="bimg">
+                <button id="buy-button1">59kr</button>
+                <div class="bdiv">
+                    <button id="minus-barn" class="bbutton">-</button>
+                    <span id="antal-barn" class="bspan">0</span>
+                    <button id="plus-barn" class="bbutton">+</button>
+                </div>
+                <button id="buy-button" class="bbutton">Köp Biljett</button>
             </div>
-
-            <h2 class="bh2">Vuxenbiljett (13+ år)</h2>
-            <img src="img/misc/vuxenbiljett.jpg" width="200" height="200" alt="Bild på vuxenbiljett" class="bimg">
-            <div class="bdiv">
-                <button id="minus-vuxen" class="bbutton">-</button>
-                <span id="antal-vuxen" class="bspan">0</span>
-                <button id="plus-vuxen" class="bbutton">+</button>
+            <div id="division2">
+                <h2 class="bh2">Vuxenbiljett (13+ år)</h2>
+                <img src="img/misc/vuxenbiljett.jpg" width="300" height="300" alt="Bild på vuxenbiljett" class="bimg">
+                <button id="buy-button2">129kr</button>
+                <div class="bdiv">
+                    <button id="minus-vuxen" class="bbutton">-</button>
+                    <span id="antal-vuxen" class="bspan">0</span>
+                    <button id="plus-vuxen" class="bbutton">+</button>
+                </div>
+                <button id="buy-buttonn" class="bbutton">Köp Biljett</button>
             </div>
-
-            <h2 class="bh2">Biljett med husdjur</h2>
-            <img src="img/misc/miscbiljett.jpg" width="200" height="200" alt="Bild på biljett med husdjur" class="bimg">
-            <div class="bdiv">
-                <button id="minus-husdjur" class="bbutton">-</button>
-                <span id="antal-husdjur" class="bspan">0</span>
-                <button id="plus-husdjur" class="bbutton">+</button>
+            <div id="division3">
+                <h2 class="bh2">Husdjur följer med</h2>
+                <img src="img/misc/miscbiljett.jpg" width="300" height="300" alt="Bild på biljett med husdjur" class="bimg">
+                <button id="buy-button3">149kr</button>
+                <div class="bdiv">
+                    <button id="minus-husdjur" class="bbutton">-</button>
+                    <span id="antal-husdjur" class="bspan">0</span>
+                    <button id="plus-husdjur" class="bbutton">+</button>
+                </div>
+                <button id="buy-buttonnn" class="bbutton">Köp Biljett</button>
             </div>
         </div>
-        
 
         <script>
             function increase(id) {
@@ -73,7 +86,23 @@
             function decrease(id) {
                 var element = document.getElementById(id);
                 element.innerHTML = Math.max(0, parseInt(element.innerHTML) - 1);
+
             }
+
+            document.getElementById("buy-button").addEventListener("click", function() {
+                var element = document.getElementById("antal-barn");
+                element.innerHTML = 0;
+            });
+
+            document.getElementById("buy-buttonn").addEventListener("click", function() {
+                var element = document.getElementById("antal-vuxen");
+                element.innerHTML = 0;
+            });
+
+            document.getElementById("buy-buttonnn").addEventListener("click", function() {
+                var element = document.getElementById("antal-husdjur");
+                element.innerHTML = 0;
+            });
 
             document.getElementById("minus-barn").addEventListener("click", function() {
                 decrease("antal-barn");
@@ -98,6 +127,8 @@
             document.getElementById("plus-husdjur").addEventListener("click", function() {
                 increase("antal-husdjur");
             });
+
+            
         </script>
     </main>
 
@@ -106,7 +137,7 @@
         <p id="pfooter">Ett zoo för alla. Ta med hela familjen och njut en dag av underbara djur och<br>go stämning bara hos oss på Lek & Zoo!</p>
 
         <div id="elma">
-            <p><b>© 2022  All rights reserved.</b></p>
+            <p><b>© 2023  All rights reserved.</b></p>
             <p><b>Made with the power of Momo</b></p>
         </div>
     </footer>
