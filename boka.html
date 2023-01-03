@@ -28,10 +28,77 @@
 
     </header>
 
-    <main>
-        <div id="divmain">
-            <span>1</span>
+    <main id="bokaoss">
+
+        <div id="bokaossimg">
+            <img src="img/backgrounds/contactus.jpg" alt="kontakta oss gärna" id="cnusimg">
         </div>
+
+        <div id="test222">
+            <h1 class="bh1">Välkommen att boka biljetter till Zoo</h1>
+            <p class="bp">På den här sidan kan du boka biljetter till vårt fantastiska djurpark. Välj mellan olika biljetttyper nedan och använd plus- och minusknapparna för att ändra antalet biljetter.</p>
+
+            <h2 class="bh2">Barnbiljett (3-12 år)</h2>
+            <img src="img/misc/barnbiljett.jpg" width="200" height="200" alt="Bild på barnbiljett" class="bimg">
+            <div class="bdiv">
+                <button id="minus-barn" class="bbutton">-</button>
+                <span id="antal-barn" class="bspan">0</span>
+                <button id="plus-barn" class="bbutton">+</button>
+            </div>
+
+            <h2 class="bh2">Vuxenbiljett (13+ år)</h2>
+            <img src="img/misc/vuxenbiljett.jpg" width="200" height="200" alt="Bild på vuxenbiljett" class="bimg">
+            <div class="bdiv">
+                <button id="minus-vuxen" class="bbutton">-</button>
+                <span id="antal-vuxen" class="bspan">0</span>
+                <button id="plus-vuxen" class="bbutton">+</button>
+            </div>
+
+            <h2 class="bh2">Biljett med husdjur</h2>
+            <img src="img/misc/miscbiljett.jpg" width="200" height="200" alt="Bild på biljett med husdjur" class="bimg">
+            <div class="bdiv">
+                <button id="minus-husdjur" class="bbutton">-</button>
+                <span id="antal-husdjur" class="bspan">0</span>
+                <button id="plus-husdjur" class="bbutton">+</button>
+            </div>
+        </div>
+        
+
+        <script>
+            function increase(id) {
+                var element = document.getElementById(id);
+                element.innerHTML = parseInt(element.innerHTML) + 1;
+            }
+
+            function decrease(id) {
+                var element = document.getElementById(id);
+                element.innerHTML = Math.max(0, parseInt(element.innerHTML) - 1);
+            }
+
+            document.getElementById("minus-barn").addEventListener("click", function() {
+                decrease("antal-barn");
+            });
+
+            document.getElementById("plus-barn").addEventListener("click", function() {
+                increase("antal-barn");
+            });
+
+            document.getElementById("minus-vuxen").addEventListener("click", function() {
+                decrease("antal-vuxen");
+            });
+
+            document.getElementById("plus-vuxen").addEventListener("click", function() {
+                increase("antal-vuxen");
+            });
+
+            document.getElementById("minus-husdjur").addEventListener("click", function() {
+                decrease("antal-husdjur");
+            });
+
+            document.getElementById("plus-husdjur").addEventListener("click", function() {
+                increase("antal-husdjur");
+            });
+        </script>
     </main>
 
     <footer>

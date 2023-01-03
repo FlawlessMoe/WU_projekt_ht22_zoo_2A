@@ -491,18 +491,22 @@ form {
   font-size: 2em;
   margin-bottom: 0.5em;
   margin-top: 80px;
+  color: #408036;
 }
 
 .omossh2 {
-  font-size: 1.5em;
+  font-size: 2em;
   margin-top: 1em;
   margin-bottom: 0.5em;
+  color: #408036;
+  font-weight: 800;
 }
 
 .omossp {
   font-size: 1em;
   line-height: 1.5;
   margin-bottom: 1em;
+  font-weight: 600;
 }
 
 #omossul {
@@ -563,15 +567,15 @@ form {
 }
 
 #omossceo {
-    margin-top: 60px;
+    margin-top: 100px;
 }
 
 #omossint {
-    margin-top: 60px;
+    margin-top: 100px;
 }
 
 #omossz00 {
-    margin-top: 60px;
+    margin-top: 100px;
 }
 
 #dwightimg {
@@ -625,6 +629,65 @@ form {
 
 #uldiv2 {
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bh1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+}
+  
+.bp {
+    margin: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+  
+.bh2 {
+    margin: 20px 0 10px;
+    font-size: 18px;
+    color: #333;
+}
+  
+.bimg {
+    display: block;
+    margin: 0 auto;
+}
+  
+.bdiv {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+  
+.bbutton {
+    border: none;
+    background: #eee;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+  
+.bbutton:hover {
+    background: #ddd;
+}
+  
+.bspan {
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+#bokaoss {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#test222 {
+    margin-top: 100px;
+    display: grid;
     justify-content: center;
     align-items: center;
 }
