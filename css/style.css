@@ -27,7 +27,7 @@ h1 {
     font-weight: 800;
     font-size: 40px;
     text-align: center;
-    color: black;
+    color: #408036;
 }
 
 #indexhome {
@@ -45,7 +45,7 @@ h1 {
 }
 
 #shoppingbag {
-    height: 40p x;
+    height: 40px;
     width: 40px;
 }
 
@@ -150,9 +150,8 @@ main {
 #ptitel {
     font-size: 40px;
     text-align: center;
-    color: black;
-    font-weight: bold;
-    font-weight: 500;
+    color: #408036;
+    font-weight: 800;
 }
 
 #pinfo {
@@ -198,15 +197,17 @@ h2 {
 
 #h2 {
     margin-top: 5%;
-    color: black;
+    color: #408036;
 }
 
 #h21 {
     margin-top: 2.5%;
+    color: #408036;
 }
 
 #h22 {
     margin-top: 2.5%;
+    color: #408036;
 }
 
 h3 {
@@ -410,6 +411,8 @@ p {
     margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
+    font-weight: 800;
+    color: #408036;
 }
 
 #hejp {
@@ -650,8 +653,8 @@ form {
 
 .bh1 {
     text-align: center;
-    margin: 20px 0;
-    color: #333;
+    margin-top: 80px;
+    color: #408036;
 }
   
 .bp {
@@ -664,7 +667,7 @@ form {
     margin: 20px 0 10px;
     font-size: 18px;
     font-weight: 800;
-    color: #333;
+    color: #408036;
 }
   
 .bimg {
@@ -698,7 +701,7 @@ form {
 }
 
 #buy-button1 {
-    margin-left: 110px;
+    margin-left: 112.5px;
     margin-top: 50px;
     border: none;
     background: #4e7049;
@@ -709,7 +712,7 @@ form {
 }
 
 #buy-button2 {
-    margin-left: 110px;
+    margin-left: 112.5px;
     margin-top: 50px;
     border: none;
     background: #4e7049;
@@ -720,7 +723,7 @@ form {
 }
 
 #buy-button3 {
-    margin-left: 110px;
+    margin-left: 112.5px;
     margin-top: 50px;
     border: none;
     background: #4e7049;
