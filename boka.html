@@ -77,59 +77,6 @@
             </div>
         </div>
 
-        <script>
-            function increase(id) {
-                var element = document.getElementById(id);
-                element.innerHTML = parseInt(element.innerHTML) + 1;
-            }
-
-            function decrease(id) {
-                var element = document.getElementById(id);
-                element.innerHTML = Math.max(0, parseInt(element.innerHTML) - 1);
-
-            }
-
-            document.getElementById("buy-button").addEventListener("click", function() {
-                var element = document.getElementById("antal-barn");
-                element.innerHTML = 0;
-            });
-
-            document.getElementById("buy-buttonn").addEventListener("click", function() {
-                var element = document.getElementById("antal-vuxen");
-                element.innerHTML = 0;
-            });
-
-            document.getElementById("buy-buttonnn").addEventListener("click", function() {
-                var element = document.getElementById("antal-husdjur");
-                element.innerHTML = 0;
-            });
-
-            document.getElementById("minus-barn").addEventListener("click", function() {
-                decrease("antal-barn");
-            });
-
-            document.getElementById("plus-barn").addEventListener("click", function() {
-                increase("antal-barn");
-            });
-
-            document.getElementById("minus-vuxen").addEventListener("click", function() {
-                decrease("antal-vuxen");
-            });
-
-            document.getElementById("plus-vuxen").addEventListener("click", function() {
-                increase("antal-vuxen");
-            });
-
-            document.getElementById("minus-husdjur").addEventListener("click", function() {
-                decrease("antal-husdjur");
-            });
-
-            document.getElementById("plus-husdjur").addEventListener("click", function() {
-                increase("antal-husdjur");
-            });
-
-            
-        </script>
     </main>
 
     <footer>
