@@ -162,27 +162,61 @@ main {
 }
 
 #content1 {
-    display: flex;
+    display: grid;
     width: auto;
-    height: 2000px;
+    height: auto;
     justify-content: center;
     align-items: center;
 }
 
 #page1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+#page2 {
+    background: #696969;
+    display: flex;
+    height: 300px;
+    width: 1519px;
+    justify-content: center;
+    align-items: center;
+}
+
+#hejh {
+    color: white;
+    font-size: 18px;
+}
+
+#h2elma2 {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+#page3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #contentelma {
+    margin: 100px;
+}
 
+#contentelmaa{
+    width: 500px;
+    margin: 50px;
 }
 
 #h2elma {
+    font-size: 38px;
 
 }
 
 #textelma {
-
+    font-size: 20px;
 }
 
 #deerelma {
